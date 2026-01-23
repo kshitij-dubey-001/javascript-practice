@@ -23,4 +23,26 @@ for (let i = 0; i < text.length; i++) {
 }
 
 console.log(count);
+const n = 3;
+let output = "";
+for (let i = 1; i <= n; i++) {
+  let spaces = "";
+  let stars = "";
+
+  for (let s = 1; s <= n - i; s++) spaces += " ";
+  for (let st = 1; st <= i * 2 - 1; st++) stars += "*";
+
+  output += spaces + stars + "\n";
+}
+for (let i = n - 1; i >= 1; i--) {
+  let spaces = "";
+  let stars = "";
+
+  for (let s = 1; s <= n - i; s++) spaces += " ";
+  for (let st = 1; st <= i * 2 - 1; st++) stars += "*";
+
+  output += spaces + stars + "\n";
+}
+
+console.log(output);
         
